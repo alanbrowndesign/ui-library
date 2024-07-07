@@ -17,7 +17,7 @@
     "dist"
   ],
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/nickderaj"
+    "registry": "https://npm.pkg.github.com/modernagedigital"
   },
   "babel": {
     "sourceType": "unambiguous",
