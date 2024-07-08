@@ -1,12 +1,12 @@
 {
-  "name": "@modernagedigital/ui-library",
-  "version": "0.0.4",
+  "name": "@modernagedigital/az-primitives",
+  "version": "0.0.5",
   "author": "Alan Brown",
   "repository": {
     "type": "git",
     "url": "https://github.com/modernagedigital/ui-library"
   },
-  "description": "A personalised UI Library.",
+  "description": "A UI Library of Primitive Components.",
   "license": "MIT",
   "scripts": {
     "dev": "rollup -c --watch",
