@@ -1,0 +1,6 @@
+.c-section {
+  background-color: var(--colorway-background-main);
+  color: var(--colorway-text-body);
+  padding-inline: var(--pad-x);
+  padding-block: var(--pad-y);
+}

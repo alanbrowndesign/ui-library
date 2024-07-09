@@ -1,0 +1,288 @@
+:root {
+  --rem-base: 16;
+
+  /*****************/
+  /* Fluid scale */
+  /*****************/
+
+  --fluid-scale-min: 8;
+  --fluid-scale-max: 16;
+  --fluid-scale-increment: 8;
+  --fluid-scale-location: 0;
+
+  --fluid-space-calc: calc(
+    (
+        (var(--fluid-scale-max) - var(--fluid-scale-min)) *
+          var(--fluid-scale-location)
+      ) + var(--fluid-scale-min)
+  );
+
+  --fluid-scale-2xs: calc(
+    (var(--fluid-space-calc) * 0.5) / var(--rem-base) * 1rem
+  );
+  --fluid-scale-xs: calc(var(--fluid-space-calc) / var(--rem-base) * 1rem);
+  --fluid-scale-sm: calc(
+    (var(--fluid-space-calc) + (var(--fluid-scale-increment) * 1)) /
+      var(--rem-base) * 1rem
+  );
+  --fluid-scale-md: calc(
+    (var(--fluid-space-calc) + (var(--fluid-scale-increment) * 2)) /
+      var(--rem-base) * 1rem
+  );
+  --fluid-scale-lg: calc(
+    (var(--fluid-space-calc) + (var(--fluid-scale-increment) * 3)) /
+      var(--rem-base) * 1rem
+  );
+
+  --fluid-scale-xl: calc(
+    (var(--fluid-space-calc) + (var(--fluid-scale-increment) * 4)) /
+      var(--rem-base) * 1rem
+  );
+
+  --fluid-scale-2xl: calc(
+    (var(--fluid-space-calc) + (var(--fluid-scale-increment) * 5)) /
+      var(--rem-base) * 1rem
+  );
+  --fluid-scale-3xl: calc(
+    (var(--fluid-space-calc) + (var(--fluid-scale-increment) * 6)) /
+      var(--rem-base) * 1rem
+  );
+  --fluid-scale-4xl: calc(
+    (var(--fluid-space-calc) + (var(--fluid-scale-increment) * 7)) /
+      var(--rem-base) * 1rem
+  );
+  --fluid-scale-5xl: calc(
+    (var(--fluid-space-calc) + (var(--fluid-scale-increment) * 8)) /
+      var(--rem-base) * 1rem
+  );
+  --fluid-scale-6xl: calc(
+    (var(--fluid-space-calc) + (var(--fluid-scale-increment) * 9)) /
+      var(--rem-base) * 1rem
+  );
+
+  --fluid-scale-2xs-xs: calc(
+    (
+        (var(--fluid-scale-xs) - var(--fluid-scale-2xs)) *
+          var(--fluid-scale-location)
+      ) + var(--fluid-scale-2xs)
+  );
+
+  --fluid-scale-xs-sm: calc(
+    (
+        (var(--fluid-scale-sm) - var(--fluid-scale-xs)) *
+          var(--fluid-scale-location)
+      ) + var(--fluid-scale-xs)
+  );
+
+  --fluid-scale-sm-md: calc(
+    (
+        (var(--fluid-scale-md) - var(--fluid-scale-sm)) *
+          var(--fluid-scale-location)
+      ) + var(--fluid-scale-sm)
+  );
+
+  --fluid-scale-md-lg: calc(
+    (
+        (var(--fluid-scale-lg) - var(--fluid-scale-md)) *
+          var(--fluid-scale-location)
+      ) + var(--fluid-scale-md)
+  );
+
+  --fluid-scale-lg-xl: calc(
+    (
+        (var(--fluid-scale-xl) - var(--fluid-scale-lg)) *
+          var(--fluid-scale-location)
+      ) + var(--fluid-scale-lg)
+  );
+
+  --fluid-scale-xl-2xl: calc(
+    (
+        (var(--fluid-scale-2xl) - var(--fluid-scale-xl)) *
+          var(--fluid-scale-location)
+      ) + var(--fluid-scale-xl)
+  );
+
+  --fluid-scale-2xl-3xl: calc(
+    (
+        (var(--fluid-scale-3xl) - var(--fluid-scale-2xl)) *
+          var(--fluid-scale-location)
+      ) + var(--fluid-scale-2xl)
+  );
+
+  --fluid-scale-3xl-4xl: calc(
+    (
+        (var(--fluid-scale-4xl) - var(--fluid-scale-3xl)) *
+          var(--fluid-scale-location)
+      ) + var(--fluid-scale-3xl)
+  );
+
+  --fluid-scale-4xl-5xl: calc(
+    (
+        (var(--fluid-scale-5xl) - var(--fluid-scale-4xl)) *
+          var(--fluid-scale-location)
+      ) + var(--fluid-scale-4xl)
+  );
+
+  --fluid-scale-5xl-6xl: calc(
+    (
+        (var(--fluid-scale-6xl) - var(--fluid-scale-5xl)) *
+          var(--fluid-scale-location)
+      ) + var(--fluid-scale-5xl)
+  );
+
+  --fluid-scale-2xs-sm: calc(
+    (
+        (var(--fluid-scale-sm) - var(--fluid-scale-2xs)) *
+          var(--fluid-scale-location)
+      ) + var(--fluid-scale-2xs)
+  );
+
+  --fluid-scale-xs-md: calc(
+    (
+        (var(--fluid-scale-md) - var(--fluid-scale-xs)) *
+          var(--fluid-scale-location)
+      ) + var(--fluid-scale-xs)
+  );
+
+  --fluid-scale-sm-lg: calc(
+    (
+        (var(--fluid-scale-lg) - var(--fluid-scale-sm)) *
+          var(--fluid-scale-location)
+      ) + var(--fluid-scale-sm)
+  );
+
+  --fluid-scale-md-xl: calc(
+    (
+        (var(--fluid-scale-xl) - var(--fluid-scale-md)) *
+          var(--fluid-scale-location)
+      ) + var(--fluid-scale-md)
+  );
+
+  --fluid-scale-lg-2xl: calc(
+    (
+        (var(--fluid-scale-2xl) - var(--fluid-scale-lg)) *
+          var(--fluid-scale-location)
+      ) + var(--fluid-scale-lg)
+  );
+
+  --fluid-scale-xl-3xl: calc(
+    (
+        (var(--fluid-scale-3xl) - var(--fluid-scale-xl)) *
+          var(--fluid-scale-location)
+      ) + var(--fluid-scale-xl)
+  );
+
+  --fluid-scale-2xl-4xl: calc(
+    (
+        (var(--fluid-scale-4xl) - var(--fluid-scale-2xl)) *
+          var(--fluid-scale-location)
+      ) + var(--fluid-scale-2xl)
+  );
+
+  --fluid-scale-3xl-5xl: calc(
+    (
+        (var(--fluid-scale-5xl) - var(--fluid-scale-3xl)) *
+          var(--fluid-scale-location)
+      ) + var(--fluid-scale-3xl)
+  );
+
+  --fluid-scale-4xl-6xl: calc(
+    (
+        (var(--fluid-scale-6xl) - var(--fluid-scale-4xl)) *
+          var(--fluid-scale-location)
+      ) + var(--fluid-scale-4xl)
+  );
+
+  /*****************/
+  /* Fixed scale */
+  /*****************/
+  --fixed-inc: 4;
+  --rem-base-calc: var(--rem-base) * 1rem;
+
+  --fixed-scale-1: calc(calc(var(--fixed-inc) * 1) / var(--rem-base-calc));
+  --fixed-scale-2: calc(calc(var(--fixed-inc) * 2) / var(--rem-base-calc));
+  --fixed-scale-3: calc(calc(var(--fixed-inc) * 3) / var(--rem-base-calc));
+  --fixed-scale-4: calc(calc(var(--fixed-inc) * 4) / var(--rem-base-calc));
+  --fixed-scale-5: calc(calc(var(--fixed-inc) * 5) / var(--rem-base-calc));
+  --fixed-scale-6: calc(calc(var(--fixed-inc) * 6) / var(--rem-base-calc));
+  --fixed-scale-7: calc(calc(var(--fixed-inc) * 7) / var(--rem-base-calc));
+  --fixed-scale-8: calc(calc(var(--fixed-inc) * 8) / var(--rem-base-calc));
+  --fixed-scale-9: calc(calc(var(--fixed-inc) * 9) / var(--rem-base-calc));
+  --fixed-scale-10: calc(calc(var(--fixed-inc) * 10) / var(--rem-base-calc));
+  --fixed-scale-11: calc(calc(var(--fixed-inc) * 11) / var(--rem-base-calc));
+  --fixed-scale-12: calc(calc(var(--fixed-inc) * 12) / var(--rem-base-calc));
+  --fixed-scale-13: calc(calc(var(--fixed-inc) * 13) / var(--rem-base-calc));
+  --fixed-scale-14: calc(calc(var(--fixed-inc) * 14) / var(--rem-base-calc));
+  --fixed-scale-15: calc(calc(var(--fixed-inc) * 15) / var(--rem-base-calc));
+  --fixed-scale-16: calc(calc(var(--fixed-inc) * 16) / var(--rem-base-calc));
+  --fixed-scale-17: calc(calc(var(--fixed-inc) * 17) / var(--rem-base-calc));
+  --fixed-scale-18: calc(calc(var(--fixed-inc) * 18) / var(--rem-base-calc));
+  --fixed-scale-19: calc(calc(var(--fixed-inc) * 19) / var(--rem-base-calc));
+  --fixed-scale-20: calc(calc(var(--fixed-inc) * 20) / var(--rem-base-calc));
+  --fixed-scale-22: calc(calc(var(--fixed-inc) * 22) / var(--rem-base-calc));
+  --fixed-scale-24: calc(calc(var(--fixed-inc) * 24) / var(--rem-base-calc));
+  --fixed-scale-28: calc(calc(var(--fixed-inc) * 28) / var(--rem-base-calc));
+  --fixed-scale-30: calc(calc(var(--fixed-inc) * 30) / var(--rem-base-calc));
+  --fixed-scale-32: calc(calc(var(--fixed-inc) * 32) / var(--rem-base-calc));
+  --fixed-scale-34: calc(calc(var(--fixed-inc) * 34) / var(--rem-base-calc));
+  --fixed-scale-36: calc(calc(var(--fixed-inc) * 36) / var(--rem-base-calc));
+  --fixed-scale-38: calc(calc(var(--fixed-inc) * 38) / var(--rem-base-calc));
+  --fixed-scale-40: calc(calc(var(--fixed-inc) * 40) / var(--rem-base-calc));
+  --fixed-scale-44: calc(calc(var(--fixed-inc) * 44) / var(--rem-base-calc));
+  --fixed-scale-48: calc(calc(var(--fixed-inc) * 48) / var(--rem-base-calc));
+  --fixed-scale-52: calc(calc(var(--fixed-inc) * 52) / var(--rem-base-calc));
+  --fixed-scale-52: calc(calc(var(--fixed-inc) * 52) / var(--rem-base-calc));
+  --fixed-scale-56: calc(calc(var(--fixed-inc) * 56) / var(--rem-base-calc));
+  --fixed-scale-60: calc(calc(var(--fixed-inc) * 60) / var(--rem-base-calc));
+  --fixed-scale-64: calc(calc(var(--fixed-inc) * 64) / var(--rem-base-calc));
+  --fixed-scale-72: calc(calc(var(--fixed-inc) * 72) / var(--rem-base-calc));
+  --fixed-scale-80: calc(calc(var(--fixed-inc) * 80) / var(--rem-base-calc));
+  --fixed-scale-96: calc(calc(var(--fixed-inc) * 96) / var(--rem-base-calc));
+
+  /* ***************/
+  /* Screen Sizes */
+  /* ***************/
+  --screen-2xs: calc(320 / var(--rem-base-calc));
+  --screen-xs: calc(480 / var(--rem-base-calc));
+  --screen-sm: calc(640 / var(--rem-base-calc));
+  --screen-md: calc(768 / var(--rem-base-calc));
+  --screen-lg: calc(1024 / var(--rem-base-calc));
+  --screen-xl: calc(1280 / var(--rem-base-calc));
+  --screen-2xl: calc(1536 / var(--rem-base-calc));
+
+  /* *******************/
+  /* Typographic Scale */
+  /* *******************/
+  --type-base: 1rem;
+  --type-ratio: 1.11;
+
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 0.875rem;
+  --font-size-base: var(--type-base);
+  --font-size-lg: calc(var(--type-base) * var(--type-ratio));
+  --font-size-xl: calc(var(--font-size-lg) * var(--type-ratio));
+  --font-size-2xl: calc(var(--font-size-xl) * var(--type-ratio));
+  --font-size-3xl: calc(var(--font-size-2xl) * var(--type-ratio));
+  --font-size-4xl: calc(var(--font-size-3xl) * var(--type-ratio));
+  --font-size-5xl: calc(var(--font-size-4xl) * var(--type-ratio));
+  --font-size-6xl: calc(var(--font-size-5xl) * var(--type-ratio));
+  --font-size-7xl: calc(var(--font-size-6xl) * var(--type-ratio));
+  --font-size-8xl: calc(var(--font-size-7xl) * var(--type-ratio));
+  --font-size-9xl: calc(var(--font-size-8xl) * var(--type-ratio));
+}
+
+/* @md */
+@media (min-width: 48rem) {
+  :root {
+    --type-ratio: 1.15;
+    --fluid-scale-location: 0.5;
+  }
+}
+
+/* @xl */
+@media (min-width: 80rem) {
+  :root {
+    --type-ratio: 1.18;
+    --fluid-scale-location: 1;
+  }
+}

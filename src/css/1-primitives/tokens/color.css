@@ -1,0 +1,350 @@
+:root {
+  /*****************************/
+  /*****************************/
+  /******     BRAND       ******/
+  /*****************************/
+  /*****************************/
+
+  /*******************/
+  /* AstraZeneca */
+  /*******************/
+
+  /* Core Palette */
+  --color-brand-primary: var(--color-brand-primary-main);
+  --color-brand-secondary: var(--color-brand-secondary-main);
+  --color-brand-supporting: var(--color-brand-supporting-main);
+  --color-brand-supporting-variant: var(--color-brand-supporting-variant-main);
+  --color-brand-accent: var(--color-gold-9);
+
+  /* primary */
+  --color-brand-primary-main: var(--color-mulberry-12);
+  --color-brand-primary-contrast: var(--color-mulberry-12);
+  --color-brand-primary-text: var(--color-white);
+
+  /* secondary */
+  --color-brand-secondary-main: var(--color-magenta-11);
+  --color-brand-secondary-contrast: var(--color-magenta-11);
+  --color-brand-secondary-text: var(--color-white);
+
+  /* supporting */
+  --color-brand-supporting-main: var(--color-mulberry-13);
+  --color-brand-supporting-contrast: var(--color-mulberry-13);
+  --color-brand-supporting-text: var(--color-white);
+
+  /* supporting-variant */
+  --color-brand-supporting-variant-main: var(--color-blue-12);
+  --color-brand-supporting-variant-contrast: var(--color-blue-12);
+  --color-brand-supporting-variant-text: var(--color-white);
+
+  /* interaction */
+  --color-brand-interaction-main: var(--color-magenta-11);
+  --color-brand-interaction-highlight: var(--color-magenta-9);
+  --color-brand-interaction-contrast: var(--color-magenta-12);
+
+  /* neutral */
+  --color-brand-neutral-white: var(--color-white);
+  --color-brand-neutral-100: var(--color-graphite-1);
+  --color-brand-neutral-200: var(--color-platinum-2);
+  --color-brand-neutral-300: var(--color-platinum-3);
+  --color-brand-neutral-400: var(--color-graphite-6);
+  --color-brand-neutral-500: var(--color-graphite-7);
+  --color-brand-neutral-600: var(--color-graphite-8);
+  --color-brand-neutral-700: var(--color-graphite-10);
+  --color-brand-neutral-800: var(--color-graphite-11);
+  --color-brand-neutral-900: var(--color-graphite-12);
+  --color-brand-neutral-black: var(--color-black);
+}
+
+[data-ui-theme^="forxiga"] {
+  /************************/
+  /* Forxiga */
+  /************************/
+
+  /* Core Palette */
+  --color-brand-primary: var(--color-brand-primary-main);
+  --color-brand-secondary: var(--color-brand-secondary-main);
+  --color-brand-supporting: var(--color-brand-supporting-main);
+  --color-brand-supporting-variant: var(--color-brand-supporting-variant-main);
+  --color-brand-accent: var(--color-lime-9);
+
+  /* primary */
+  --color-brand-primary-main: var(--color-tomato-10);
+  --color-brand-primary-contrast: var(--color-tomato-12);
+  --color-brand-primary-text: var(--color-white);
+
+  /* secondary */
+  --color-brand-secondary-main: var(--color-blue-10);
+  --color-brand-secondary-contrast: var(--color-blue-12);
+  --color-brand-secondary-text: var(--color-white);
+
+  /* supporting */
+  --color-brand-supporting-main: var(--color-blue-10);
+  --color-brand-supporting-contrast: var(--color-blue-12);
+  --color-brand-supporting-text: var(--color-white);
+
+  /* supporting-variant */
+  --color-brand-supporting-variant-main: var(--color-lime-7);
+  --color-brand-supporting-variant-contrast: var(--color-lime-7);
+  --color-brand-supporting-variant-text: var(--color-neutral-900);
+
+  /* interaction */
+  --color-brand-interaction-main: var(--color-tomato-11);
+  --color-brand-interaction-highlight: var(--color-tomato-9);
+  --color-brand-interaction-contrast: var(--color-tomato-12);
+
+  /* neutral */
+  --color-brand-neutral-100: var(--color-gray-1);
+  --color-brand-neutral-200: var(--color-gray-2);
+  --color-brand-neutral-300: var(--color-gray-3);
+  --color-brand-neutral-400: var(--color-gray-6);
+  --color-brand-neutral-500: var(--color-gray-7);
+  --color-brand-neutral-600: var(--color-gray-8);
+  --color-brand-neutral-700: var(--color-gray-10);
+  --color-brand-neutral-800: var(--color-gray-11);
+  --color-brand-neutral-900: var(--color-gray-12);
+}
+
+[data-ui-theme^="symbicort"] {
+  /************************/
+  /* Symbicort */
+  /************************/
+
+  /* Core Palette */
+  --color-brand-primary: var(--color-brand-primary-main);
+  --color-brand-secondary: var(--color-brand-secondary-main);
+  --color-brand-supporting: var(--color-brand-supporting-main);
+  --color-brand-supporting-variant: var(--color-brand-supporting-variant-main);
+  --color-brand-accent: var(--color-red-10);
+
+  /* primary */
+  --color-brand-primary-main: var(--color-red-10);
+  --color-brand-primary-contrast: var(--color-red-12);
+  --color-brand-primary-text: var(--color-white);
+
+  /* secondary */
+  --color-brand-secondary-main: var(--color-blue-12);
+  --color-brand-secondary-contrast: var(--color-blue-12);
+  --color-brand-secondary-text: var(--color-white);
+
+  /* supporting */
+  --color-brand-supporting-main: var(--color-red-6);
+  --color-brand-supporting-contrast: var(--color-red-6);
+  --color-brand-supporting-text: var(--color-red-12);
+
+  /* supporting-variant */
+  --color-brand-supporting-variant-main: var(--color-blue-6);
+  --color-brand-supporting-variant-contrast: var(--color-blue-6);
+  --color-brand-supporting-variant-text: var(--color-blue-12);
+
+  /* interaction */
+  --color-brand-interaction-main: var(--color-red-11);
+  --color-brand-interaction-highlight: var(--color-red-9);
+  --color-brand-interaction-contrast: var(--color-red-12);
+
+  /* neutral */
+  --color-brand-neutral-100: var(--color-olive-1);
+  --color-brand-neutral-200: var(--color-olive-2);
+  --color-brand-neutral-300: var(--color-olive-3);
+  --color-brand-neutral-400: var(--color-olive-6);
+  --color-brand-neutral-500: var(--color-olive-7);
+  --color-brand-neutral-600: var(--color-olive-8);
+  --color-brand-neutral-700: var(--color-olive-10);
+  --color-brand-neutral-800: var(--color-olive-11);
+  --color-brand-neutral-900: var(--color-olive-12);
+}
+
+[data-ui-theme^="fasenra"] {
+  /************************/
+  /* Fasenra */
+  /************************/
+
+  /* Core Palette */
+  --color-brand-primary: var(--color-brand-primary-main);
+  --color-brand-secondary: var(--color-brand-secondary-main);
+  --color-brand-supporting: var(--color-brand-supporting-main);
+  --color-brand-supporting-variant: var(--color-brand-supporting-variant-main);
+  --color-brand-accent: var(--color-teal-9);
+
+  /* primary */
+  --color-brand-primary-main: var(--color-pink-11);
+  --color-brand-primary-contrast: var(--color-pink-12);
+  --color-brand-primary-text: var(--color-white);
+
+  /* secondary */
+  --color-brand-secondary-main: var(--color-teal-10);
+  --color-brand-secondary-contrast: var(--color-teal-11);
+  --color-brand-secondary-text: var(--color-white);
+
+  /* supporting */
+  --color-brand-supporting-main: var(--color-pink-6);
+  --color-brand-supporting-contrast: var(--color-pink-6);
+  --color-brand-supporting-text: var(--color-pink-12);
+
+  /* supporting-variant */
+  --color-brand-supporting-variant-main: var(--color-teal-5);
+  --color-brand-supporting-variant-contrast: var(--color-teal-6);
+  --color-brand-supporting-variant-text: var(--color-teal-12);
+
+  /* interaction */
+  --color-brand-interaction-main: var(--color-pink-11);
+  --color-brand-interaction-highlight: var(--color-pink-10);
+  --color-brand-interaction-contrast: var(--color-pink-12);
+
+  /* neutral */
+  --color-brand-neutral-100: var(--color-olive-1);
+  --color-brand-neutral-200: var(--color-olive-2);
+  --color-brand-neutral-300: var(--color-olive-3);
+  --color-brand-neutral-400: var(--color-olive-6);
+  --color-brand-neutral-500: var(--color-olive-7);
+  --color-brand-neutral-600: var(--color-olive-8);
+  --color-brand-neutral-700: var(--color-olive-10);
+  --color-brand-neutral-800: var(--color-olive-11);
+  --color-brand-neutral-900: var(--color-olive-12);
+}
+
+/*****************************/
+/*****************************/
+/******   COLORWAYS     ******/
+/*****************************/
+/*****************************/
+
+:root,
+[data-ui-colorway^="default"] {
+  /************************/
+  /* Colorways (defaults) */
+  /************************/
+
+  /* background */
+  --colorway-background-main: var(--color-brand-neutral-200);
+  --colorway-background-variant: var(--color-brand-neutral-300);
+  --colorway-background-contrast: var(--color-brand-neutral-white);
+
+  /* text */
+  --colorway-text-heading: var(--color-brand-primary-main);
+  --colorway-text-heading-contrast: var(--color-brand-primary-contrast);
+  --colorway-text-heading-secondary: var(--color-brand-secondary-contrast);
+  --colorway-text-heading-neutral: var(--color-brand-neutral-900);
+  --colorway-text-body: var(--color-brand-neutral-800);
+
+  /* interaction */
+  --colorway-interaction-main: var(--color-brand-interaction-main);
+  --colorway-interaction-supporting: var(--color-brand-neutral-white);
+  --colorway-interaction-neutral: var(--color-brand-neutral-900);
+}
+
+[data-ui-colorway^="primary"] {
+  /************************/
+  /* Colorway: Primary */
+  /************************/
+
+  /* background */
+  --colorway-background-main: var(--color-brand-primary-main);
+  --colorway-background-variant: var(--color-brand-primary-main);
+  --colorway-background-contrast: var(--color-brand-primary-contrast);
+
+  /* text */
+  --colorway-text-heading: var(--color-brand-primary-text);
+  --colorway-text-heading-contrast: var(--color-brand-primary-text);
+  --colorway-text-heading-secondary: var(--color-brand-primary-text);
+  --colorway-text-heading-neutral: var(--color-brand-primary-text);
+  --colorway-text-body: var(--color-brand-primary-text);
+
+  /* interaction */
+  --colorway-interaction-main: var(--color-brand-neutral-white);
+  --colorway-interaction-supporting: var(--color-brand-interaction-main);
+  --colorway-interaction-neutral: var(--color-brand-neutral-white);
+}
+
+[data-ui-colorway^="secondary"] {
+  /************************/
+  /* Colorway: Secondary */
+  /************************/
+
+  /* background */
+  --colorway-background-main: var(--color-brand-secondary-main);
+  --colorway-background-variant: var(--color-brand-secondary-main);
+  --colorway-background-contrast: var(--color-brand-secondary-contrast);
+
+  /* text */
+  --colorway-text-heading: var(--color-brand-secondary-text);
+  --colorway-text-heading-contrast: var(--color-brand-secondary-text);
+  --colorway-text-heading-secondary: var(--color-brand-secondary-text);
+  --colorway-text-heading-neutral: var(--color-brand-secondary-text);
+  --colorway-text-body: var(--color-brand-secondary-text);
+
+  /* interaction */
+  --colorway-interaction-main: var(--color-brand-neutral-white);
+  --colorway-interaction-supporting: var(--color-brand-interaction-main);
+  --colorway-interaction-neutral: var(--color-brand-neutral-white);
+}
+
+[data-ui-colorway^="supporting"] {
+  /************************/
+  /* Colorway: Supporting */
+  /************************/
+
+  /* background */
+  --colorway-background-main: var(--color-brand-supporting-main);
+  --colorway-background-variant: var(--color-brand-supporting-main);
+  --colorway-background-contrast: var(--color-brand-supporting-contrast);
+
+  /* text */
+  --colorway-text-heading: var(--color-brand-supporting-text);
+  --colorway-text-heading-contrast: var(--color-brand-supporting-text);
+  --colorway-text-heading-secondary: var(--color-brand-supporting-text);
+  --colorway-text-heading-neutral: var(--color-brand-supporting-text);
+  --colorway-text-body: var(--color-brand-supporting-text);
+
+  /* interaction */
+  --colorway-interaction-main: var(--color-brand-neutral-white);
+  --colorway-interaction-supporting: var(--color-brand-interaction-main);
+  --colorway-interaction-neutral: var(--color-brand-neutral-white);
+}
+
+[data-ui-colorway^="supporting-variant"] {
+  /************************/
+  /* Colorway: Supporting Variant */
+  /************************/
+
+  /* background */
+  --colorway-background-main: var(--color-brand-supporting-variant-main);
+  --colorway-background-variant: var(--color-brand-supporting-variant-main);
+  --colorway-background-contrast: var(
+    --color-brand-supporting-variant-contrast
+  );
+
+  /* text */
+  --colorway-text-heading: var(--color-brand-supporting-variant-text);
+  --colorway-text-heading-contrast: var(--color-brand-supporting-variant-text);
+  --colorway-text-heading-secondary: var(--color-brand-supporting-variant-text);
+  --colorway-text-heading-neutral: var(--color-brand-supporting-variant-text);
+  --colorway-text-body: var(--color-brand-supporting-variant-text);
+
+  /* interaction */
+  --colorway-interaction-main: var(--color-brand-neutral-white);
+  --colorway-interaction-supporting: var(--color-brand-interaction-main);
+  --colorway-interaction-neutral: var(--color-brand-neutral-white);
+}
+
+[data-ui-colorway^="neutral"] {
+  /************************/
+  /* Colorway: Neutral */
+  /************************/
+
+  /* background */
+  --colorway-background-main: var(--color-brand-neutral-800);
+  --colorway-background-variant: var(--color-brand-neutral-800);
+  --colorway-background-contrast: var(--color-brand-neutral-900);
+
+  /* text */
+  --colorway-text-heading: var(--color-brand-neutral-white);
+  --colorway-text-heading-contrast: var(--color-brand-neutral-white);
+  --colorway-text-heading-secondary: var(--color-brand-neutral-100);
+  --colorway-text-heading-neutral: var(--color-brand-neutral-200);
+  --colorway-text-body: var(--color-brand-neutral-white);
+
+  /* interaction */
+  --colorway-interaction-main: var(--color-brand-neutral-white);
+  --colorway-interaction-supporting: var(--color-brand-interaction-main);
+  --colorway-interaction-neutral: var(--color-brand-neutral-white);
+}

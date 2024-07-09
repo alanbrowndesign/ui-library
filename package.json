@@ -1,6 +1,6 @@
 {
   "name": "@modernagedigital/az-primitives",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "author": "Alan Brown",
   "repository": {
     "type": "git",
@@ -22,33 +22,6 @@
   ],
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/modernagedigital"
-  },
-  "babel": {
-    "sourceType": "unambiguous",
-    "presets": [
-      [
-        "@babel/preset-env",
-        {
-          "targets": {
-            "chrome": 100,
-            "safari": 15,
-            "firefox": 91
-          }
-        }
-      ],
-      [
-        "@babel/preset-react",
-        {
-          "runtime": "automatic"
-        }
-      ],
-      "@babel/preset-typescript"
-    ]
-  },
-  "postcss": {
-    "plugins": {
-      "postcss-import": {}
-    }
   },
   "devDependencies": {
     "@babel/core": "^7.24.7",

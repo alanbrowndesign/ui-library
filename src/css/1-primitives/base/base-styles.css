@@ -1,0 +1,6 @@
+html body {
+  font-family: var(--font-family-text);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-normal);
+  color: var(--color-brand-text-body);
+}

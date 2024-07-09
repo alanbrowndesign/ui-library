@@ -1,0 +1,14 @@
+/***************/
+/* Foundations */
+/***************/
+@import "0-foundations/reset.css";
+@import "0-foundations/color-scales.css";
+@import "0-foundations/base-size.css";
+
+/***************/
+/* Primitives */
+/***************/
+@import "1-primitives/tokens/color.css";
+@import "1-primitives/tokens/typography.css";
+@import "1-primitives/tokens/size.css";
+@import "1-primitives/base/base-styles.css";

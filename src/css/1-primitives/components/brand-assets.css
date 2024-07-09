@@ -1,0 +1,22 @@
+.c-logo_astrazeneca,
+.c-logo_fasenra,
+.c-logo_symbicort,
+.c-logo_forxiga {
+  display: none;
+}
+
+[data-ui-theme="astrazeneca"] .c-logo_astrazeneca {
+  display: block;
+}
+
+[data-ui-theme="fasenra"] .c-logo_fasenra {
+  display: block;
+}
+
+[data-ui-theme="symbicort"] .c-logo_symbicort {
+  display: block;
+}
+
+[data-ui-theme="forxiga"] .c-logo_forxiga {
+  display: block;
+}

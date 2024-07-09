@@ -1,0 +1,28 @@
+.c-icon {
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  line-height: 1;
+  --icon-fill: 0;
+  --icon-weight: 400;
+  font-style: normal;
+  font-family: "Material Symbols Outlined";
+  font-variation-settings:
+    "FILL" var(--icon-fill),
+    "wght" var(--icon-weight),
+    "GRAD" 0,
+    "opsz" 24;
+  font-size: 32px;
+}
+
+.c-icon--filled {
+  --icon-fill: 1;
+}
+
+.c-icon--weight-light {
+  --icon-weight: 200;
+}
+
+.c-icon--weight-heavy {
+  --icon-weight: 600;
+}
