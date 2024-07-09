@@ -1,3 +1,8 @@
-export { default as Button } from "./Button";
-export { default as Icon } from "./Icon";
-export { default as Section } from "./Section";
+export { Button } from "./Button";
+export { Icon } from "./Icon";
+export { Section } from "./Section";
+
+export { Logo_AstraZeneca } from "./Logos";
+export { Logo_Fasenra } from "./Logos";
+export { Logo_Symbicort } from "./Logos";
+export { Logo_Forxiga } from "./Logos";

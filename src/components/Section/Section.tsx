@@ -15,7 +15,7 @@ type SectionProps = {
     | "neutral";
 } & HTMLAttributes<HTMLElement>;
 
-const Section: FC<SectionProps> = ({
+export const Section: FC<SectionProps> = ({
   className,
   background = "main",
   colorway,
@@ -31,5 +31,3 @@ const Section: FC<SectionProps> = ({
     </div>
   );
 };
-
-export default Section;

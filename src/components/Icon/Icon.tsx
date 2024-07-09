@@ -9,7 +9,7 @@ type IconProps = {
   weight?: "light" | "regular" | "heavy";
 } & HTMLAttributes<HTMLElement>;
 
-const Icon: FC<IconProps> = ({
+export const Icon: FC<IconProps> = ({
   className,
   iconName = "grid_guides",
   filled = false,
@@ -26,5 +26,3 @@ const Icon: FC<IconProps> = ({
     </i>
   );
 };
-
-export default Icon;
