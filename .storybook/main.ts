@@ -24,6 +24,7 @@ const config: StorybookConfig = {
     <style>
       #storybook-docs .docblock-code-toggle { display: none; }
       .sbdocs > .sbdocs-content { max-width: 1280px; }
+
     </style>
   `,
 };

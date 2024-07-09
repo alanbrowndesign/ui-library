@@ -1,6 +1,6 @@
 {
   "name": "@modernagedigital/az-primitives",
-  "version": "0.0.10",
+  "version": "0.0.11",
   "author": "Alan Brown",
   "repository": {
     "type": "git",
@@ -12,7 +12,8 @@
     "dev": "rollup -c --watch",
     "build": "rollup -c",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "publish": "npm run build & npm publish"
   },
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
@@ -20,6 +21,11 @@
   "files": [
     "dist"
   ],
+  "postcss": {
+    "plugins": {
+      "postcss-import": {}
+    }
+  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/modernagedigital"
   },

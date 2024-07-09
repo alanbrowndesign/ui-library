@@ -1,0 +1,18 @@
+.section {
+  background-color: var(--colorway-background-main);
+  color: var(--colorway-text-body);
+  padding-inline: var(--pad-x);
+  padding-block: var(--pad-y);
+}
+
+.section--bg-main {
+  background-color: var(--colorway-background-main);
+}
+
+.section--bg-variant {
+  background-color: var(--colorway-background-variant);
+}
+
+.section--bg-contrast {
+  background-color: var(--colorway-background-contrast);
+}
