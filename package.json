@@ -61,5 +61,8 @@
   },
   "peerDependencies": {
     "react": "^18.2.0"
+  },
+  "dependencies": {
+    "@whitespace/storybook-addon-html": "^6.1.1"
   }
 }

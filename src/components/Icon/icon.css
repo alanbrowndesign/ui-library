@@ -1,4 +1,4 @@
-.c-icon {
+.icon {
   display: block;
   width: fit-content;
   height: fit-content;
@@ -15,14 +15,14 @@
   font-size: 32px;
 }
 
-.c-icon--filled {
+.icon--filled {
   --icon-fill: 1;
 }
 
-.c-icon--weight-light {
+.icon--weight-light {
   --icon-weight: 200;
 }
 
-.c-icon--weight-heavy {
+.icon--weight-heavy {
   --icon-weight: 600;
 }

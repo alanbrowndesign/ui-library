@@ -22,7 +22,7 @@ const Section: FC<SectionProps> = ({
   children,
   ...props
 }) => {
-  const componentClasses = classNames("section", className, colorway, [
+  const componentClasses = classNames("section", className, [
     `section--bg-${background}`,
   ]);
   return (
