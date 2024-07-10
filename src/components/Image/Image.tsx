@@ -1,26 +1,7 @@
-import { FC, HTMLAttributes } from "react";
+import { FC } from "react";
+import { ImageProps } from "../types/types.image";
 import classNames from "classnames";
 import "./image.css";
-
-type ImageProps = {
-  className?: string;
-  imgSrc: string;
-  imgAlt: string;
-  width: number;
-  height: number;
-  isVideo?: boolean;
-  aspectRatio?:
-    | "none"
-    | "1-1"
-    | "2-1"
-    | "3-4"
-    | "4-3"
-    | "3-2"
-    | "16-9"
-    | "21-9"
-    | "32-9";
-  onClick?: () => void;
-} & HTMLAttributes<HTMLElement>;
 
 const ThumbnailIcon: FC = () => {
   return (
@@ -48,7 +29,6 @@ export const Image: FC<ImageProps> = ({
   width = 400,
   height = 300,
   isVideo,
-  onClick,
   ...props
 }) => {
   const componentClasses = classNames("image-container", className, {
@@ -61,14 +41,13 @@ export const Image: FC<ImageProps> = ({
   });
   return (
     <>
-      <div className={componentClasses} onClick={onClick}>
+      <div className={componentClasses} {...props}>
         <img
           width={width}
           height={height}
           className={imgClasses}
           src={imgSrc}
           alt={imgAlt}
-          {...props}
         />
         {isVideo && <ThumbnailIcon />}
       </div>

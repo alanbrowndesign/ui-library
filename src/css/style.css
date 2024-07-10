@@ -4,6 +4,7 @@
 @import "0-foundations/reset.css";
 @import "0-foundations/color-scales.css";
 @import "0-foundations/base-size.css";
+@import "0-foundations/elevation.css";
 
 /***************/
 /* Primitives */

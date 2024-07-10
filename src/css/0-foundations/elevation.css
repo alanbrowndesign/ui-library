@@ -1,0 +1,77 @@
+:root {
+  /*************/
+  /***  Low  ***/
+  /*************/
+
+  /* Shadow: Strong */
+  --elevation-low-strong-shadow-color: rgba(0, 0, 0, 0.12);
+  --elevation-low-strong-blur: 1px;
+  --elevation-low-strong-spread: -2px;
+  --elevation-low-strong-y-offset: 0;
+
+  /* Shadow: Mid */
+  --elevation-low-mid-shadow-color: rgba(0, 0, 0, 0.08);
+  --elevation-low-mid-blur: 8px;
+  --elevation-low-mid-spread: 0;
+  --elevation-low-mid-y-offset: 1px;
+
+  /* Shadow: falloff */
+  --elevation-low-falloff-shadow-color: rgba(0, 0, 0, 0.08);
+  --elevation-low-falloff-blur: 16px;
+  --elevation-low-falloff-spread: 0;
+  --elevation-low-falloff-y-offset: 2px;
+
+  /* Elevation/Low */
+  --elevation-low-strong: 0px var(--elevation-low-strong-y-offset)
+    var(--elevation-low-strong-blur) var(--elevation-low-strong-spread)
+    var(--elevation-low-strong-shadow-color);
+
+  --elevation-low-mid: 0px var(--elevation-low-mid-y-offset)
+    var(--elevation-low-strong-blur) var(--elevation-low-strong-spread)
+    var(--elevation-low-mid-shadow-color);
+
+  --elevation-low-falloff: 0px var(--elevation-low-falloff-y-offset)
+    var(--elevation-low-falloff-blur) var(--elevation-low-falloff-spread)
+    var(--elevation-low-falloff-shadow-color);
+
+  --elevation-low: var(--elevation-low-strong), var(--elevation-low-mid),
+    var(--elevation-low-falloff);
+
+  /*************/
+  /**  Medium **/
+  /*************/
+
+  /* Shadow: Strong */
+  --elevation-medium-strong-shadow-color: rgba(0, 0, 0, 0.2);
+  --elevation-medium-strong-blur: 4px;
+  --elevation-medium-strong-spread: -4px;
+  --elevation-medium-strong-y-offset: 1px;
+
+  /* Shadow: Mid */
+  --elevation-medium-mid-shadow-color: rgba(0, 0, 0, 0.12);
+  --elevation-medium-mid-blur: 12px;
+  --elevation-medium-mid-spread: 0;
+  --elevation-medium-mid-y-offset: 2px;
+
+  /* Shadow: falloff */
+  --elevation-medium-falloff-shadow-color: rgba(0, 0, 0, 0.12);
+  --elevation-medium-falloff-blur: 24px;
+  --elevation-medium-falloff-spread: 2px;
+  --elevation-medium-falloff-y-offset: 4px;
+
+  /* Elevation/Medium */
+  --elevation-medium-strong: 0px var(--elevation-medium-strong-y-offset)
+    var(--elevation-medium-strong-blur) var(--elevation-medium-strong-spread)
+    var(--elevation-medium-strong-shadow-color);
+
+  --elevation-medium-mid: 0px var(--elevation-medium-mid-y-offset)
+    var(--elevation-medium-strong-blur) var(--elevation-medium-strong-spread)
+    var(--elevation-medium-mid-shadow-color);
+
+  --elevation-medium-falloff: 0px var(--elevation-medium-falloff-y-offset)
+    var(--elevation-medium-falloff-blur) var(--elevation-medium-falloff-spread)
+    var(--elevation-medium-falloff-shadow-color);
+
+  --elevation-medium: var(--elevation-medium-strong),
+    var(--elevation-medium-mid), var(--elevation-medium-falloff);
+}
