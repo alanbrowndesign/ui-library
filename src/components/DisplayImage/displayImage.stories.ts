@@ -1,10 +1,8 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import { DisplayImage } from "./DisplayImage";
-import { Image } from "../Image";
 
 const meta = {
   title: "Primitives/Display/Display Image",
-  subcomponents: { Image },
   component: DisplayImage,
   tags: ["autodocs"],
   parameters: { layout: "centered" },
