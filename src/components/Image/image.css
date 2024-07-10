@@ -1,0 +1,62 @@
+.image-wrapper {
+  width: fit-content;
+}
+
+.image {
+  display: block;
+  object-fit: cover;
+}
+
+[class*="image--aspect-"],
+[class^="image--aspect-"] {
+  width: 100%;
+}
+
+.image--aspect-1-1 {
+  aspect-ratio: 1 / 1;
+}
+.image--aspect-2-1 {
+  aspect-ratio: 2 / 1;
+}
+.image--aspect-3-4 {
+  aspect-ratio: 3 / 4;
+}
+.image--aspect-4-3 {
+  aspect-ratio: 4 / 3;
+}
+.image--aspect-3-2 {
+  aspect-ratio: 3 / 2;
+}
+.image--aspect-16-9 {
+  aspect-ratio: 16 / 9;
+}
+.image--aspect-21-9 {
+  aspect-ratio: 21 / 9;
+}
+.image--aspect-32-9 {
+  aspect-ratio: 32 / 9;
+}
+
+.image__video-thumb {
+  width: var(--fixed-scale-16);
+  height: var(--fixed-scale-16);
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius-full);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  @media (min-width: 640px) {
+    width: var(--fixed-scale-24);
+    height: var(--fixed-scale-24);
+  }
+}
+
+.image__video-thumb-inner {
+  width: 40%;
+  height: 40%;
+  transform: translateX(4px);
+}

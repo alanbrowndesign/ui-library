@@ -1,0 +1,179 @@
+:root,
+[data-ui-colorway^="default"] {
+  /************************/
+  /* Colorways (defaults) */
+  /************************/
+
+  /* background */
+  --colorway-background-main: var(--color-brand-neutral-200);
+  --colorway-background-variant: var(--color-brand-neutral-300);
+  --colorway-background-contrast: var(--color-brand-neutral-white);
+
+  /* text */
+  --colorway-text-heading: var(--color-brand-primary-main);
+  --colorway-text-heading-contrast: var(--color-brand-primary-contrast);
+  --colorway-text-heading-secondary: var(--color-brand-secondary-contrast);
+  --colorway-text-heading-neutral: var(--color-brand-neutral-900);
+  --colorway-text-body: var(--color-brand-neutral-800);
+
+  /* interaction */
+  --colorway-interaction-primary-backing: var(
+    --color-brand-interaction-primary-backing
+  );
+  --colorway-interaction-primary-backing-hover: var(
+    --color-brand-interaction-primary-backing-hover
+  );
+  --colorway-interaction-primary-text: var(
+    --color-brand-interaction-primary-text
+  );
+  --colorway-interaction-main: var(--color-brand-interaction-main);
+  --colorway-interaction-variant: var(--color-brand-neutral-white);
+  --colorway-interaction-neutral: var(--color-brand-neutral-900);
+}
+
+[data-ui-colorway^="primary"] {
+  /************************/
+  /* Colorway: Primary */
+  /************************/
+
+  /* background */
+  --colorway-background-main: var(--color-brand-primary-main);
+  --colorway-background-variant: var(--color-brand-primary-main);
+  --colorway-background-contrast: var(--color-brand-primary-contrast);
+
+  /* text */
+  --colorway-text-heading: var(--color-brand-primary-text);
+  --colorway-text-heading-contrast: var(--color-brand-primary-text);
+  --colorway-text-heading-secondary: var(--color-brand-primary-text);
+  --colorway-text-heading-neutral: var(--color-brand-primary-text);
+  --colorway-text-body: var(--color-brand-primary-text);
+
+  /* interaction */
+  --colorway-interaction-primary-backing: var(
+    --color-brand-interaction-primary-backing
+  );
+  --colorway-interaction-primary-text: var(
+    --color-brand-interaction-primary-text
+  );
+  --colorway-interaction-main: var(--color-brand-neutral-white);
+  --colorway-interaction-variant: var(--color-brand-interaction-main);
+  --colorway-interaction-neutral: var(--color-brand-neutral-white);
+}
+
+[data-ui-colorway^="secondary"] {
+  /************************/
+  /* Colorway: Secondary */
+  /************************/
+
+  /* background */
+  --colorway-background-main: var(--color-brand-secondary-main);
+  --colorway-background-variant: var(--color-brand-secondary-main);
+  --colorway-background-contrast: var(--color-brand-secondary-contrast);
+
+  /* text */
+  --colorway-text-heading: var(--color-brand-secondary-text);
+  --colorway-text-heading-contrast: var(--color-brand-secondary-text);
+  --colorway-text-heading-secondary: var(--color-brand-secondary-text);
+  --colorway-text-heading-neutral: var(--color-brand-secondary-text);
+  --colorway-text-body: var(--color-brand-secondary-text);
+
+  /* interaction */
+  --colorway-interaction-primary-backing: var(
+    --color-brand-interaction-primary-backing
+  );
+  --colorway-interaction-primary-text: var(
+    --color-brand-interaction-primary-text
+  );
+  --colorway-interaction-main: var(--color-brand-neutral-white);
+  --colorway-interaction-variant: var(--color-brand-interaction-main);
+  --colorway-interaction-neutral: var(--color-brand-neutral-white);
+}
+
+[data-ui-colorway^="supporting"] {
+  /************************/
+  /* Colorway: Supporting */
+  /************************/
+
+  /* background */
+  --colorway-background-main: var(--color-brand-supporting-main);
+  --colorway-background-variant: var(--color-brand-supporting-main);
+  --colorway-background-contrast: var(--color-brand-supporting-contrast);
+
+  /* text */
+  --colorway-text-heading: var(--color-brand-supporting-text);
+  --colorway-text-heading-contrast: var(--color-brand-supporting-text);
+  --colorway-text-heading-secondary: var(--color-brand-supporting-text);
+  --colorway-text-heading-neutral: var(--color-brand-supporting-text);
+  --colorway-text-body: var(--color-brand-supporting-text);
+
+  /* interaction */
+  --colorway-interaction-primary-backing: var(
+    --color-brand-interaction-primary-backing
+  );
+  --colorway-interaction-primary-text: var(
+    --color-brand-interaction-primary-text
+  );
+  --colorway-interaction-main: var(--color-brand-neutral-white);
+  --colorway-interaction-variant: var(--color-brand-interaction-main);
+  --colorway-interaction-neutral: var(--color-brand-neutral-white);
+}
+
+[data-ui-colorway^="supporting-variant"] {
+  /************************/
+  /* Colorway: Supporting Variant */
+  /************************/
+
+  /* background */
+  --colorway-background-main: var(--color-brand-supporting-variant-main);
+  --colorway-background-variant: var(--color-brand-supporting-variant-main);
+  --colorway-background-contrast: var(
+    --color-brand-supporting-variant-contrast
+  );
+
+  /* text */
+  --colorway-text-heading: var(--color-brand-supporting-variant-text);
+  --colorway-text-heading-contrast: var(--color-brand-supporting-variant-text);
+  --colorway-text-heading-secondary: var(--color-brand-supporting-variant-text);
+  --colorway-text-heading-neutral: var(--color-brand-supporting-variant-text);
+  --colorway-text-body: var(--color-brand-supporting-variant-text);
+
+  /* interaction */
+  --colorway-interaction-primary-backing: var(
+    --color-brand-interaction-primary-backing
+  );
+  --colorway-interaction-primary-text: var(
+    --color-brand-interaction-primary-text
+  );
+  --colorway-interaction-main: var(--color-brand-neutral-white);
+  --colorway-interaction-variant: var(--color-brand-interaction-main);
+  --colorway-interaction-neutral: var(--color-brand-neutral-white);
+}
+
+[data-ui-colorway^="neutral"] {
+  /************************/
+  /* Colorway: Neutral */
+  /************************/
+
+  /* background */
+  --colorway-background-main: var(--color-brand-neutral-800);
+  --colorway-background-variant: var(--color-brand-neutral-800);
+  --colorway-background-contrast: var(--color-brand-neutral-900);
+
+  /* text */
+  --colorway-text-heading: var(--color-brand-neutral-white);
+  --colorway-text-heading-contrast: var(--color-brand-neutral-white);
+  --colorway-text-heading-secondary: var(--color-brand-neutral-100);
+  --colorway-text-heading-neutral: var(--color-brand-neutral-200);
+  --colorway-text-body: var(--color-brand-neutral-white);
+
+  /* interaction */
+  --colorway-interaction-primary-backing: var(
+    --color-brand-interaction-primary-backing
+  );
+  --colorway-interaction-primary-text: var(
+    --color-brand-interaction-primary-text
+  );
+  --colorway-interaction-main: var(--color-brand-neutral-white);
+  --colorway-interaction-variant: var(--color-brand-interaction-main);
+  --colorway-interaction-neutral: var(--color-brand-neutral-white);
+}

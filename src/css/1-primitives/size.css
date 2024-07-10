@@ -9,6 +9,7 @@
   --pad-x: var(--fluid-scale-md-xl);
   --pad-y: var(--fluid-scale-xl-2xl);
   --gap: var(--fluid-scale-lg-xl);
+  --touch-target: var(--fixed-scale-10);
 
   --border-radius-sm: 0.125rem;
   --border-radius-base: var(--fixed-scale-1);

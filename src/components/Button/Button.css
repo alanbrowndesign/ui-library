@@ -1,36 +1,66 @@
-.c-button {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  border-radius: 0.75rem;
-  border-width: 1px;
-  text-align: center;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 300ms;
+.button {
+  width: fit-content;
+  padding: 0;
+  position: relative;
+  min-height: var(--touch-target);
+  padding-inline: var(--fixed-scale-2);
+  padding-block: var(--fixed-scale-1);
+  font-family: var(--font-family-text);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-base);
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+  gap: calc(var(--fixed-scale-1) * -1);
+  cursor: pointer;
 }
 
-.c-button__primary {
-  color: white;
-  background-color: #1ea7fd;
-  border-color: #1ea7fd;
+.button__backing {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: var(--border-radius-md);
+  transition: background-color 0.2s ease;
 }
 
-.c-button__secondary {
-  color: #1ea7fd;
-  background-color: white;
-  border-color: #1ea7fd;
+.button__label {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+  padding-inline: var(--fixed-scale-2);
 }
 
-button:hover {
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  filter: brightness(1.25);
+.button__icon {
+  font-size: 24px;
+  z-index: 1;
+  /* background-color: green; */
 }
 
-button:disabled {
-  background-color: #737373;
-  border-color: #737373;
-  color: #e5e5e5;
-  cursor: not-allowed;
+.button__primary {
+  color: var(--colorway-interaction-variant);
+  & .button__backing {
+    background-color: var(--colorway-interaction-primary-backing);
+  }
+}
+
+.button:hover {
+  &.button__primary {
+    & .button__backing {
+      background-color: var(--colorway-interaction-primary-backing-hover);
+    }
+  }
+}
+
+.button__secondary {
+  color: var(--colorway-interaction-main);
+  & .button__backing {
+    border: 1px solid;
+    border-color: var(--colorway-interaction-main);
+  }
 }

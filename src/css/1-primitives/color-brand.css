@@ -37,7 +37,11 @@
   --color-brand-supporting-variant-text: var(--color-white);
 
   /* interaction */
+  --color-brand-interaction-primary-backing: var(--color-magenta-11);
+  --color-brand-interaction-primary-backing-hover: var(--color-magenta-9);
+  --color-brand-interaction-primary-text: var(--color-white);
   --color-brand-interaction-main: var(--color-magenta-11);
+  --color-brand-interaction-variant: var(--color-white);
   --color-brand-interaction-highlight: var(--color-magenta-9);
   --color-brand-interaction-contrast: var(--color-magenta-12);
 
@@ -88,7 +92,11 @@
   --color-brand-supporting-variant-text: var(--color-neutral-900);
 
   /* interaction */
+  --color-brand-interaction-primary-backing: var(--color-magenta-11);
+  --color-brand-interaction-primary-backing-hover: var(--color-magenta-10);
+  --color-brand-interaction-primary-text: var(--color-white);
   --color-brand-interaction-main: var(--color-tomato-11);
+  --color-brand-interaction-variant: var(--color-white);
   --color-brand-interaction-highlight: var(--color-tomato-9);
   --color-brand-interaction-contrast: var(--color-tomato-12);
 
@@ -137,7 +145,11 @@
   --color-brand-supporting-variant-text: var(--color-blue-12);
 
   /* interaction */
+  --color-brand-interaction-primary-backing: var(--color-magenta-11);
+  --color-brand-interaction-primary-backing-hover: var(--color-magenta-10);
+  --color-brand-interaction-primary-text: var(--color-white);
   --color-brand-interaction-main: var(--color-red-11);
+  --color-brand-interaction-variant: var(--color-white);
   --color-brand-interaction-highlight: var(--color-red-9);
   --color-brand-interaction-contrast: var(--color-red-12);
 
@@ -186,7 +198,11 @@
   --color-brand-supporting-variant-text: var(--color-teal-12);
 
   /* interaction */
+  --color-brand-interaction-primary-backing: var(--color-magenta-11);
+  --color-brand-interaction-primary-backing-hover: var(--color-magenta-10);
+  --color-brand-interaction-primary-text: var(--color-white);
   --color-brand-interaction-main: var(--color-pink-11);
+  --color-brand-interaction-variant: var(--color-white);
   --color-brand-interaction-highlight: var(--color-pink-10);
   --color-brand-interaction-contrast: var(--color-pink-12);
 
@@ -200,151 +216,4 @@
   --color-brand-neutral-700: var(--color-olive-10);
   --color-brand-neutral-800: var(--color-olive-11);
   --color-brand-neutral-900: var(--color-olive-12);
-}
-
-/*****************************/
-/*****************************/
-/******   COLORWAYS     ******/
-/*****************************/
-/*****************************/
-
-:root,
-[data-ui-colorway^="default"] {
-  /************************/
-  /* Colorways (defaults) */
-  /************************/
-
-  /* background */
-  --colorway-background-main: var(--color-brand-neutral-200);
-  --colorway-background-variant: var(--color-brand-neutral-300);
-  --colorway-background-contrast: var(--color-brand-neutral-white);
-
-  /* text */
-  --colorway-text-heading: var(--color-brand-primary-main);
-  --colorway-text-heading-contrast: var(--color-brand-primary-contrast);
-  --colorway-text-heading-secondary: var(--color-brand-secondary-contrast);
-  --colorway-text-heading-neutral: var(--color-brand-neutral-900);
-  --colorway-text-body: var(--color-brand-neutral-800);
-
-  /* interaction */
-  --colorway-interaction-main: var(--color-brand-interaction-main);
-  --colorway-interaction-supporting: var(--color-brand-neutral-white);
-  --colorway-interaction-neutral: var(--color-brand-neutral-900);
-}
-
-[data-ui-colorway^="primary"] {
-  /************************/
-  /* Colorway: Primary */
-  /************************/
-
-  /* background */
-  --colorway-background-main: var(--color-brand-primary-main);
-  --colorway-background-variant: var(--color-brand-primary-main);
-  --colorway-background-contrast: var(--color-brand-primary-contrast);
-
-  /* text */
-  --colorway-text-heading: var(--color-brand-primary-text);
-  --colorway-text-heading-contrast: var(--color-brand-primary-text);
-  --colorway-text-heading-secondary: var(--color-brand-primary-text);
-  --colorway-text-heading-neutral: var(--color-brand-primary-text);
-  --colorway-text-body: var(--color-brand-primary-text);
-
-  /* interaction */
-  --colorway-interaction-main: var(--color-brand-neutral-white);
-  --colorway-interaction-supporting: var(--color-brand-interaction-main);
-  --colorway-interaction-neutral: var(--color-brand-neutral-white);
-}
-
-[data-ui-colorway^="secondary"] {
-  /************************/
-  /* Colorway: Secondary */
-  /************************/
-
-  /* background */
-  --colorway-background-main: var(--color-brand-secondary-main);
-  --colorway-background-variant: var(--color-brand-secondary-main);
-  --colorway-background-contrast: var(--color-brand-secondary-contrast);
-
-  /* text */
-  --colorway-text-heading: var(--color-brand-secondary-text);
-  --colorway-text-heading-contrast: var(--color-brand-secondary-text);
-  --colorway-text-heading-secondary: var(--color-brand-secondary-text);
-  --colorway-text-heading-neutral: var(--color-brand-secondary-text);
-  --colorway-text-body: var(--color-brand-secondary-text);
-
-  /* interaction */
-  --colorway-interaction-main: var(--color-brand-neutral-white);
-  --colorway-interaction-supporting: var(--color-brand-interaction-main);
-  --colorway-interaction-neutral: var(--color-brand-neutral-white);
-}
-
-[data-ui-colorway^="supporting"] {
-  /************************/
-  /* Colorway: Supporting */
-  /************************/
-
-  /* background */
-  --colorway-background-main: var(--color-brand-supporting-main);
-  --colorway-background-variant: var(--color-brand-supporting-main);
-  --colorway-background-contrast: var(--color-brand-supporting-contrast);
-
-  /* text */
-  --colorway-text-heading: var(--color-brand-supporting-text);
-  --colorway-text-heading-contrast: var(--color-brand-supporting-text);
-  --colorway-text-heading-secondary: var(--color-brand-supporting-text);
-  --colorway-text-heading-neutral: var(--color-brand-supporting-text);
-  --colorway-text-body: var(--color-brand-supporting-text);
-
-  /* interaction */
-  --colorway-interaction-main: var(--color-brand-neutral-white);
-  --colorway-interaction-supporting: var(--color-brand-interaction-main);
-  --colorway-interaction-neutral: var(--color-brand-neutral-white);
-}
-
-[data-ui-colorway^="supporting-variant"] {
-  /************************/
-  /* Colorway: Supporting Variant */
-  /************************/
-
-  /* background */
-  --colorway-background-main: var(--color-brand-supporting-variant-main);
-  --colorway-background-variant: var(--color-brand-supporting-variant-main);
-  --colorway-background-contrast: var(
-    --color-brand-supporting-variant-contrast
-  );
-
-  /* text */
-  --colorway-text-heading: var(--color-brand-supporting-variant-text);
-  --colorway-text-heading-contrast: var(--color-brand-supporting-variant-text);
-  --colorway-text-heading-secondary: var(--color-brand-supporting-variant-text);
-  --colorway-text-heading-neutral: var(--color-brand-supporting-variant-text);
-  --colorway-text-body: var(--color-brand-supporting-variant-text);
-
-  /* interaction */
-  --colorway-interaction-main: var(--color-brand-neutral-white);
-  --colorway-interaction-supporting: var(--color-brand-interaction-main);
-  --colorway-interaction-neutral: var(--color-brand-neutral-white);
-}
-
-[data-ui-colorway^="neutral"] {
-  /************************/
-  /* Colorway: Neutral */
-  /************************/
-
-  /* background */
-  --colorway-background-main: var(--color-brand-neutral-800);
-  --colorway-background-variant: var(--color-brand-neutral-800);
-  --colorway-background-contrast: var(--color-brand-neutral-900);
-
-  /* text */
-  --colorway-text-heading: var(--color-brand-neutral-white);
-  --colorway-text-heading-contrast: var(--color-brand-neutral-white);
-  --colorway-text-heading-secondary: var(--color-brand-neutral-100);
-  --colorway-text-heading-neutral: var(--color-brand-neutral-200);
-  --colorway-text-body: var(--color-brand-neutral-white);
-
-  /* interaction */
-  --colorway-interaction-main: var(--color-brand-neutral-white);
-  --colorway-interaction-supporting: var(--color-brand-interaction-main);
-  --colorway-interaction-neutral: var(--color-brand-neutral-white);
 }

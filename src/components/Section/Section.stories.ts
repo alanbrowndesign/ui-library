@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import Section from "./Section";
+import { Section } from "./Section";
 
 const meta = {
   title: "Primitives/Containers/Section",

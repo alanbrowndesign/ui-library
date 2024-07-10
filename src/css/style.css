@@ -8,7 +8,8 @@
 /***************/
 /* Primitives */
 /***************/
-@import "1-primitives/tokens/color.css";
-@import "1-primitives/tokens/typography.css";
-@import "1-primitives/tokens/size.css";
-@import "1-primitives/base/base-styles.css";
+@import "1-primitives/color-brand.css";
+@import "1-primitives/colorway.css";
+@import "1-primitives/typography.css";
+@import "1-primitives/size.css";
+@import "1-primitives/base-styles.css";

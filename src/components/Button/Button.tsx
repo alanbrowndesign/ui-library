@@ -1,5 +1,6 @@
 import { ButtonHTMLAttributes, ReactNode, FC } from "react";
 import classNames from "classnames";
+import { Icon } from "../Icon";
 import "./Button.css";
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -7,6 +8,8 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   size?: "sm" | "md" | "lg" | "xl";
   className?: string;
   children: ReactNode;
+  icon?: "none" | "start" | "end";
+  iconName?: "favorite" | "chevron_left" | "chevron_right";
 }
 
 export const Button: FC<ButtonProps> = ({
@@ -14,18 +17,27 @@ export const Button: FC<ButtonProps> = ({
   size = "md",
   className,
   children,
+  icon = "none",
+  iconName = "favorite",
   ...props
 }) => {
   const componentClasses = classNames(
-    "c-button",
-    [`c-button__${kind}`],
-    [`c-button__${size}`],
+    "button",
+    [`button__${kind}`],
+    [`button__${size}`],
     className
   );
 
   return (
     <button className={componentClasses} {...props}>
-      {children}
+      <div className="button__backing" />
+      {icon == "start" && (
+        <Icon className="button__icon" iconName={iconName} filled />
+      )}
+      <div className="button__label">{children}</div>
+      {icon == "end" && (
+        <Icon className="button__icon" iconName={iconName} filled />
+      )}
     </button>
   );
 };
