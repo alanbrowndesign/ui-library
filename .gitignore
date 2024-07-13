@@ -4,3 +4,5 @@ dist
 yarn-error.log
 *storybook.log
 .npmrc
+
+.DS_Store
