@@ -1,7 +1,7 @@
 import { FC, HTMLAttributes } from "react";
 import { Image } from "..";
 import classNames from "classnames";
-import "./display-image.css";
+import "./display-image.scss";
 import { ImageProps } from "../types/types.image";
 
 type DisplayImageProps = ImageProps & {

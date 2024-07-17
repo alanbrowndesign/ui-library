@@ -1,5 +1,5 @@
 import { FC } from "react";
-import "./main-navigation.css";
+import "./main-navigation.scss";
 import classNames from "classnames";
 
 type MainNavigationProps = {

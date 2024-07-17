@@ -1,0 +1,16 @@
+/***************/
+/* Foundations */
+/***************/
+@import "0-foundations/reset.scss";
+@import "0-foundations/color-scales.scss";
+@import "0-foundations/base-size.scss";
+@import "0-foundations/elevation.scss";
+
+/***************/
+/* Primitives */
+/***************/
+@import "1-primitives/color-brand.scss";
+@import "1-primitives/colorway.scss";
+@import "1-primitives/typography.scss";
+@import "1-primitives/size.scss";
+@import "1-primitives/base-styles.scss";
