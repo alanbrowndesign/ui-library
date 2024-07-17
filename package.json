@@ -10,7 +10,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "rollup -c --watch",
-    "build": "rollup -c",
+    "build": "rollup -c && copyfiles -f dist/esm/*.css dist/esm/*.css.map dist && rimraf dist/**/*.css.map dist/**/*.css",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
@@ -29,10 +29,6 @@
     "registry": "https://npm.pkg.github.com/modernagedigital"
   },
   "devDependencies": {
-    "@babel/core": "^7.24.7",
-    "@babel/preset-env": "^7.24.7",
-    "@babel/preset-react": "^7.24.7",
-    "@babel/preset-typescript": "^7.24.7",
     "@chromatic-com/storybook": "^1.6.1",
     "@rollup/plugin-commonjs": "^26.0.1",
     "@rollup/plugin-node-resolve": "^15.2.3",
@@ -47,13 +43,15 @@
     "@storybook/test": "^8.2.3",
     "@types/react": "^18.3.3",
     "autoprefixer": "^10.4.19",
-    "babel-jest": "^29.7.0",
     "classnames": "^2.5.1",
+    "copyfiles": "^2.4.1",
     "postcss": "^8.4.39",
     "postcss-import": "^16.1.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "rimraf": "^6.0.1",
     "rollup": "^4.18.0",
+    "rollup-plugin-copy": "^3.5.0",
     "rollup-plugin-delete": "^2.0.0",
     "rollup-plugin-dts": "^6.1.1",
     "rollup-plugin-postcss": "^4.0.2",

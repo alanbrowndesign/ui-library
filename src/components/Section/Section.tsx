@@ -1,6 +1,6 @@
 import { FC, HTMLAttributes } from "react";
 import classNames from "classnames";
-import "./section.scss";
+import "./section.css";
 
 type SectionProps = {
   className?: string;

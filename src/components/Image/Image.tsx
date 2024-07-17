@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { ImageProps } from "../types/types.image";
 import classNames from "classnames";
-// import "./image.scss";
+import "./image.css";
 
 const ThumbnailIcon: FC = () => {
   return (
