@@ -1,6 +1,6 @@
 import { FC, HTMLAttributes } from "react";
 import classNames from "classnames";
-import "./icon.css";
+import "./icon.scss";
 
 type IconProps = {
   className?: string;

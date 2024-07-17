@@ -1,7 +1,7 @@
 import { ButtonHTMLAttributes, ReactNode, FC } from "react";
 import classNames from "classnames";
 import { Icon } from "../Icon";
-import "./Button.css";
+import "./Button.scss";
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   kind?: "primary" | "secondary";
