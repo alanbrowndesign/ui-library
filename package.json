@@ -9,8 +9,10 @@
   "description": "A UI Library of Primitive Components.",
   "license": "MIT",
   "scripts": {
+    "clean": "rimraf dist",
+    "copy": "copyfiles -f dist/esm/*.css dist/esm/*.css.map dist && rimraf dist/**/*.css.map dist/**/*.css",
+    "build": "npm run clean && rollup -c && npm run copy",
     "dev": "rollup -c --watch",
-    "build": "rollup -c && copyfiles -f dist/esm/*.css dist/esm/*.css.map dist && rimraf dist/**/*.css.map dist/**/*.css",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },

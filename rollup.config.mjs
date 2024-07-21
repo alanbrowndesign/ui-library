@@ -3,12 +3,7 @@ import resolve from "@rollup/plugin-node-resolve";
 import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
 import postcss from "rollup-plugin-postcss";
-import plugin from "rollup-plugin-dts";
-import sass from "rollup-plugin-sass";
 import autoprefixer from "autoprefixer";
-import del from "rollup-plugin-delete";
-import copy from "rollup-plugin-copy";
-import { resolve as resolvePath } from "path";
 
 export default [
   // base CSS
@@ -19,7 +14,6 @@ export default [
       format: "es",
     },
     plugins: [
-      del({ targets: "dist/*" }),
       postcss({
         plugins: [autoprefixer],
         sourceMap: true,

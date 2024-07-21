@@ -1,3 +1,6 @@
+$rem-base: 16;
+$fixed-inc: 4; //4px
+
 :root {
   --rem-base: 16;
 
@@ -199,45 +202,45 @@
   --fixed-inc: 4;
   --rem-base-calc: var(--rem-base) * 1rem;
 
-  --fixed-scale-1: calc(calc(var(--fixed-inc) * 1) / var(--rem-base-calc));
-  --fixed-scale-2: calc(calc(var(--fixed-inc) * 2) / var(--rem-base-calc));
-  --fixed-scale-3: calc(calc(var(--fixed-inc) * 3) / var(--rem-base-calc));
-  --fixed-scale-4: calc(calc(var(--fixed-inc) * 4) / var(--rem-base-calc));
-  --fixed-scale-5: calc(calc(var(--fixed-inc) * 5) / var(--rem-base-calc));
-  --fixed-scale-6: calc(calc(var(--fixed-inc) * 6) / var(--rem-base-calc));
-  --fixed-scale-7: calc(calc(var(--fixed-inc) * 7) / var(--rem-base-calc));
-  --fixed-scale-8: calc(calc(var(--fixed-inc) * 8) / var(--rem-base-calc));
-  --fixed-scale-9: calc(calc(var(--fixed-inc) * 9) / var(--rem-base-calc));
-  --fixed-scale-10: calc(calc(var(--fixed-inc) * 10) / var(--rem-base-calc));
-  --fixed-scale-11: calc(calc(var(--fixed-inc) * 11) / var(--rem-base-calc));
-  --fixed-scale-12: calc(calc(var(--fixed-inc) * 12) / var(--rem-base-calc));
-  --fixed-scale-13: calc(calc(var(--fixed-inc) * 13) / var(--rem-base-calc));
-  --fixed-scale-14: calc(calc(var(--fixed-inc) * 14) / var(--rem-base-calc));
-  --fixed-scale-15: calc(calc(var(--fixed-inc) * 15) / var(--rem-base-calc));
-  --fixed-scale-16: calc(calc(var(--fixed-inc) * 16) / var(--rem-base-calc));
-  --fixed-scale-17: calc(calc(var(--fixed-inc) * 17) / var(--rem-base-calc));
-  --fixed-scale-18: calc(calc(var(--fixed-inc) * 18) / var(--rem-base-calc));
-  --fixed-scale-19: calc(calc(var(--fixed-inc) * 19) / var(--rem-base-calc));
-  --fixed-scale-20: calc(calc(var(--fixed-inc) * 20) / var(--rem-base-calc));
-  --fixed-scale-22: calc(calc(var(--fixed-inc) * 22) / var(--rem-base-calc));
-  --fixed-scale-24: calc(calc(var(--fixed-inc) * 24) / var(--rem-base-calc));
-  --fixed-scale-28: calc(calc(var(--fixed-inc) * 28) / var(--rem-base-calc));
-  --fixed-scale-30: calc(calc(var(--fixed-inc) * 30) / var(--rem-base-calc));
-  --fixed-scale-32: calc(calc(var(--fixed-inc) * 32) / var(--rem-base-calc));
-  --fixed-scale-34: calc(calc(var(--fixed-inc) * 34) / var(--rem-base-calc));
-  --fixed-scale-36: calc(calc(var(--fixed-inc) * 36) / var(--rem-base-calc));
-  --fixed-scale-38: calc(calc(var(--fixed-inc) * 38) / var(--rem-base-calc));
-  --fixed-scale-40: calc(calc(var(--fixed-inc) * 40) / var(--rem-base-calc));
-  --fixed-scale-44: calc(calc(var(--fixed-inc) * 44) / var(--rem-base-calc));
-  --fixed-scale-48: calc(calc(var(--fixed-inc) * 48) / var(--rem-base-calc));
-  --fixed-scale-52: calc(calc(var(--fixed-inc) * 52) / var(--rem-base-calc));
-  --fixed-scale-52: calc(calc(var(--fixed-inc) * 52) / var(--rem-base-calc));
-  --fixed-scale-56: calc(calc(var(--fixed-inc) * 56) / var(--rem-base-calc));
-  --fixed-scale-60: calc(calc(var(--fixed-inc) * 60) / var(--rem-base-calc));
-  --fixed-scale-64: calc(calc(var(--fixed-inc) * 64) / var(--rem-base-calc));
-  --fixed-scale-72: calc(calc(var(--fixed-inc) * 72) / var(--rem-base-calc));
-  --fixed-scale-80: calc(calc(var(--fixed-inc) * 80) / var(--rem-base-calc));
-  --fixed-scale-96: calc(calc(var(--fixed-inc) * 96) / var(--rem-base-calc));
+  --fixed-scale-1: #{($fixed-inc * 1) / $rem-base * 1rem};
+  --fixed-scale-2: #{($fixed-inc * 2) / $rem-base * 1rem};
+  --fixed-scale-3: #{($fixed-inc * 3) / $rem-base * 1rem};
+  --fixed-scale-4: #{($fixed-inc * 4) / $rem-base * 1rem};
+  --fixed-scale-5: #{($fixed-inc * 5) / $rem-base * 1rem};
+  --fixed-scale-6: #{($fixed-inc * 6) / $rem-base * 1rem};
+  --fixed-scale-7: #{($fixed-inc * 7) / $rem-base * 1rem};
+  --fixed-scale-8: #{($fixed-inc * 8) / $rem-base * 1rem};
+  --fixed-scale-9: #{($fixed-inc * 9) / $rem-base * 1rem};
+  --fixed-scale-10: #{($fixed-inc * 10) / $rem-base * 1rem};
+  --fixed-scale-11: #{($fixed-inc * 11) / $rem-base * 1rem};
+  --fixed-scale-12: #{($fixed-inc * 12) / $rem-base * 1rem};
+  --fixed-scale-13: #{($fixed-inc * 13) / $rem-base * 1rem};
+  --fixed-scale-14: #{($fixed-inc * 14) / $rem-base * 1rem};
+  --fixed-scale-15: #{($fixed-inc * 15) / $rem-base * 1rem};
+  --fixed-scale-16: #{($fixed-inc * 16) / $rem-base * 1rem};
+  --fixed-scale-17: #{($fixed-inc * 17) / $rem-base * 1rem};
+  --fixed-scale-18: #{($fixed-inc * 18) / $rem-base * 1rem};
+  --fixed-scale-19: #{($fixed-inc * 19) / $rem-base * 1rem};
+  --fixed-scale-20: #{($fixed-inc * 20) / $rem-base * 1rem};
+  --fixed-scale-22: #{($fixed-inc * 22) / $rem-base * 1rem};
+  --fixed-scale-24: #{($fixed-inc * 24) / $rem-base * 1rem};
+  --fixed-scale-28: #{($fixed-inc * 28) / $rem-base * 1rem};
+  --fixed-scale-30: #{($fixed-inc * 30) / $rem-base * 1rem};
+  --fixed-scale-32: #{($fixed-inc * 32) / $rem-base * 1rem};
+  --fixed-scale-34: #{($fixed-inc * 34) / $rem-base * 1rem};
+  --fixed-scale-36: #{($fixed-inc * 36) / $rem-base * 1rem};
+  --fixed-scale-38: #{($fixed-inc * 38) / $rem-base * 1rem};
+  --fixed-scale-40: #{($fixed-inc * 40) / $rem-base * 1rem};
+  --fixed-scale-44: #{($fixed-inc * 44) / $rem-base * 1rem};
+  --fixed-scale-48: #{($fixed-inc * 48) / $rem-base * 1rem};
+  --fixed-scale-52: #{($fixed-inc * 52) / $rem-base * 1rem};
+  --fixed-scale-52: #{($fixed-inc * 52) / $rem-base * 1rem};
+  --fixed-scale-56: #{($fixed-inc * 56) / $rem-base * 1rem};
+  --fixed-scale-60: #{($fixed-inc * 60) / $rem-base * 1rem};
+  --fixed-scale-64: #{($fixed-inc * 64) / $rem-base * 1rem};
+  --fixed-scale-72: #{($fixed-inc * 72) / $rem-base * 1rem};
+  --fixed-scale-80: #{($fixed-inc * 80) / $rem-base * 1rem};
+  --fixed-scale-96: #{($fixed-inc * 96) / $rem-base * 1rem};
 
   /* ***************/
   /* Screen Sizes */
